@@ -24,18 +24,18 @@ image1 = Image.open("travel.png")
 st.image(image1,width=1150)
 
 #cities data(For select box as well)
-tourist = pd.read_csv("City.csv")
+tourist = pd.read_csv("https://raw.githubusercontent.com/shubhamjangid1995/travel/main/City.csv")
 
 
 #places data, tourist places and their description
-places = pd.read_csv("Places.csv")
+places = pd.read_csv("https://raw.githubusercontent.com/shubhamjangid1995/travel/main/Places.csv")
 
 #removing the numbers from the starting of place name
 places['Place'] = [x[4:] for x in places['Place']]
 
 
 #world cities data with langitude and longitude
-city_data = pd.read_csv("worldcities.csv")
+city_data = pd.read_csv("https://raw.githubusercontent.com/shubhamjangid1995/travel/main/worldcities.csv")
 
 #renaming the name of City column in tourist data to 'city' so we can merge it with world cities.
 tourist.rename(columns={'City':'city'}, inplace=True)
