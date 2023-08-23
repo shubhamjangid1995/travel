@@ -20,8 +20,8 @@ st.textColor = "#262730"
 st. set_page_config(layout="wide")
 
 
-image1 = Image.open("travel.png")
-st.image(image1,width=1150)
+# image1 = Image.open("travel.png")
+# st.image(image1,width=1150)
 
 #cities data(For select box as well)
 tourist = pd.read_csv("https://raw.githubusercontent.com/shubhamjangid1995/travel/main/City.csv")
